@@ -1,0 +1,309 @@
+.website_ideas_example_description:hover,
+.website_ideas_example:hover {
+    transform: translate3d(1%, 0, 0);
+    transition: transform 0.35s ease-out, box-shadow 0.35s ease-out;
+}
+
+.description_container {
+    max-width: 800px;
+    
+}
+
+.description_container > p {
+    font-size: clamp(0.6rem, 15px, 3vw);
+}
+
+.project_name_container > p {
+    font-size: 30px;
+}
+
+.website_ideas_example_description,
+.website_ideas_example {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color: #191919;
+    box-shadow: 3px 3px 4px #0c0c0c;
+}
+
+.website_ideas_example_description {
+    text-align: left;   
+    max-width: 100%;
+    padding: 2rem 5rem;
+}
+
+.website_ideas_example {
+    text-align: center;  
+    width: 500px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-inline: 5rem;
+    margin-block-end: 2rem;
+}
+
+.reverse-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+    margin-inline: 5rem;
+    margin-block-end: 5rem;
+}
+
+.website_link_text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -1rem;
+    padding: 5rem 0;
+    color: #000;
+    font-size: clamp(0.6rem, 5vw, 20px);
+    font-weight: 700;
+    text-align: center;
+    background-color:  #f5f5dc;
+    opacity: 0.7;
+}
+
+.website_thumbnail_image > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    position: absolute;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 100%;
+   
+}
+
+.website_thumbnail_image {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 0;
+    background: #060606;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px #0c0c0c;
+}
+
+h2 {
+    font-size: clamp(0.6rem, 40px, 5vw);
+    padding: 0 5rem;
+}
+
+
+* ::after, ::before{
+    box-sizing: border-box;
+}
+
+.website_right_angle:hover {
+    border-right: solid 1px #ffa500;
+}
+
+.website_reverse-right_angle:hover {
+    border-left: solid 1px #ffa500;
+}
+
+.website_right_angle::before,
+.website_reverse-right_angle::before {
+    content: ' ';
+    display: block;
+    padding: 1rem 0rem;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.website_right_angle::after,
+.website_reverse-right_angle::after {
+    content: ' ';
+    display: block;
+    padding: 1rem 0rem;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.website_right_angle::before {
+    background: linear-gradient(to bottom right, #060606 , #060606 50%, transparent 51%, transparent 100%);
+}
+
+.website_right_angle::after {
+    background: linear-gradient(to top right, #060606, #060606 50%, transparent 51%, transparent 100%); 
+}
+
+.website_reverse-right_angle::before {
+    background: linear-gradient(to bottom left, #060606 , #060606 50%, transparent 51%, transparent 100%); 
+}
+
+.website_reverse-right_angle::after {
+    background: linear-gradient(to top left, #060606 , #060606 50%, transparent 51%, transparent 100%);
+}
+
+
+@media screen and (max-width: 600px) {
+    h2 {
+        padding: 0.5rem;
+        position: relative;
+        top: 4rem;
+    }
+
+    .flex {
+        position: relative;
+        top: 2rem;
+        margin: 3rem 0rem;
+        flex-wrap: wrap-reverse;
+        gap: 0rem;
+       
+    }
+    
+    .reverse-flex {
+        position: relative;
+        top: 3rem;
+        margin: 3rem 0rem;
+        flex-wrap: wrap-reverse;
+        gap: 0rem;
+    }
+
+    .website_ideas_example_description {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .website_ideas_example_description > p {
+      font-size: 15px;
+    }
+
+    .website_ideas_example {
+        width: 100%;
+    }
+
+    .website_right_angle:hover {
+        border: none;
+        
+    }
+    
+    .website_reverse-right_angle:hover {
+        border: none;
+    }
+
+    .website_right_angle::before {
+        background: linear-gradient(to bottom right, #060606 , #060606 50%, transparent 51%, transparent 100%); 
+        padding: 0.7rem;
+     }
+     
+     .website_right_angle::after {
+         background: linear-gradient(to top left, #060606, #060606 50%, transparent 51%, transparent 100%); 
+         padding: 0.7rem;
+     }
+     
+     .website_reverse-right_angle::before {
+         background: linear-gradient(to bottom right, #060606 , #060606 50%, transparent 51%, transparent 100%); 
+         padding: 0.7rem;
+        
+     }
+     
+     .website_reverse-right_angle::after {
+         background: linear-gradient(to top left, #060606 , #060606 50%, transparent 51%, transparent 100%);
+         padding: 0.7rem;
+     } 
+
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    h2 {
+        padding: 0.5rem;
+        position: relative;
+        top: 4rem;
+    }
+
+    .flex {
+        position: relative;
+        top: 2rem;
+        margin: 3rem 0rem;
+        flex-wrap: wrap-reverse;
+        gap: 0rem;
+       
+    }
+    
+    .reverse-flex {
+        position: relative;
+        top: 3rem;
+        margin: 3rem 0rem;
+        flex-wrap: wrap-reverse;
+        gap: 0rem;
+    }
+
+    .website_ideas_example_description {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .website_ideas_example {
+        width: 100%;
+    }
+
+    .website_thumbnail_image {
+        padding: 5rem;
+    }
+
+    .website_right_angle:hover {
+        border: none;
+        
+    }
+    
+    .website_reverse-right_angle:hover {
+        border: none;
+    }
+
+    .website_right_angle::before {
+        background: linear-gradient(to bottom right, #060606 , #060606 50%, transparent 51%, transparent 100%); 
+        padding: 0.7rem;
+     }
+     
+     .website_right_angle::after {
+         background: linear-gradient(to top left, #060606, #060606 50%, transparent 51%, transparent 100%); 
+         padding: 0.7rem;
+     }
+     
+     .website_reverse-right_angle::before {
+         background: linear-gradient(to bottom right, #060606 , #060606 50%, transparent 51%, transparent 100%); 
+         padding: 0.7rem;
+        
+     }
+     
+     .website_reverse-right_angle::after {
+         background: linear-gradient(to top left, #060606 , #060606 50%, transparent 51%, transparent 100%);
+         padding: 0.7rem;
+     } 
+ 
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .website_thumbnail_image {
+        padding: 4rem;
+    }
+}

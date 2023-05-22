@@ -1,0 +1,18 @@
+@media screen and (max-width: 900px) {
+   .about__svg {
+    width: 220px;
+    height: 250px
+}  
+}
+
+@media screen  and (min-width: 900px) and (max-width: 1200px) {
+    .about__svg {
+        width: 380px;
+        height: 250px
+    }  
+}
+
+
+
+    
+

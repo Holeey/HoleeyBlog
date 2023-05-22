@@ -1,0 +1,240 @@
+.portfolio {
+    padding-top: 2rem;
+    background-color: #000;
+    color: #f0f8ff; 
+}
+
+.portfolio > h1 {
+    font-size: clamp(0.6rem, 6vw, 50px);
+    padding: 0.5rem;
+    margin-left: 5rem;
+}
+
+.portfolio > h3 {
+    font-size: clamp(0.6rem, 5vw, 30px);
+    padding: 0.5rem;
+    margin-left: 5rem;
+  
+}
+.section_col_grid {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    gap: 2rem;
+    margin: 5rem;
+}
+
+.ideas_example_description,
+.ideas_example {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4rem 2rem;
+    color: aliceblue;
+    background-color: #191919;
+    box-shadow: 3px 3px 4px #0c0c0c;
+    width: 100%;
+}
+
+.ideas_example_description {
+    text-align: center;    
+}
+
+
+.thumbnail_image {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 4rem 5rem ;
+    object-fit: cover;
+    background: #060606;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px #0c0c0c;
+}
+
+
+.link_text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -1rem;
+    color: #000;
+    font-size: clamp(0.6rem, 5vw, 20px);
+    font-weight: 700;
+    text-align: center;
+    background-color: #f5f5dc;
+    opacity: 0.7;
+    padding: 5rem 0;
+
+}
+
+.thumbnail_image > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+img {
+    display: block;
+    position: absolute;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 100%;
+    height: auto; 
+}
+
+
+.ideas_example_description:hover,
+.ideas_example:hover {
+    transform: translate3d(1%, 0, 0);
+    transition: transform 0.35s ease-out, box-shadow 0.35s ease-out;
+}
+
+* ::after, ::before{
+    box-sizing: border-box;
+}
+
+.right_angle::before,
+.reverse-right_angle::before {
+    content: ' ';
+    display: block;
+    padding: 1rem 0rem;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.right_angle::after,
+.reverse-right_angle::after {
+    content: ' ';
+    display: block;
+    padding: 1rem 0rem;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.right_angle::before {
+    background: linear-gradient(to bottom right, #060606, #060606 50%, transparent 51%, transparent 100%);
+}
+
+.right_angle::after {
+    background: linear-gradient(to top right, #060606, #060606 50%, transparent 51%, transparent 100%); 
+}
+
+.reverse-right_angle::before {
+    background: linear-gradient(to bottom right, #060606, #060606 50%, transparent 51%, transparent 100%); 
+}
+
+.reverse-right_angle::after {
+    background: linear-gradient(to top right, #060606, #060606 50%, transparent 51%, transparent 100%);
+}
+
+.website {
+    font-size: clamp(0.6rem, 5vw, 30px);
+    padding: 5rem;
+}
+
+
+
+
+@media screen and (max-width: 819px) {
+    .portfolio > h1{
+        margin-left: 0rem;
+    }
+
+    .portfolio > h3{
+        margin-left: 0rem;
+    }
+
+    .ideas_example {
+        padding:  1.5rem;
+        font-size: 10px;
+    }
+
+    .ideas_example_description {     
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .section_col_grid {
+        margin: 0;
+        flex-wrap: wrap-reverse;
+        gap: 0.5rem;
+
+    }
+ 
+    .thumbnail_image {
+      padding: auto;
+    }
+
+    .right_angle::before,
+    .right_angle::after,
+    .reverse-right_angle::before,
+    .reverse-right_angle::after {
+        padding: 0.5rem 0rem;
+    }
+
+    .right_angle::before {
+    background: linear-gradient(to  bottom right, #060606, #060606 50%, transparent 51%, transparent 100%);
+    }
+
+    .right_angle::after {
+        background: linear-gradient(to right top , #060606, #060606 50%, transparent 51%, transparent 100%);
+    }
+
+   .reverse-right_angle::before {
+        background: linear-gradient(to  left bottom, #060606, #060606 50%, transparent 51%, transparent 100%);   
+    }
+
+    .reverse-right_angle::after {
+        background: linear-gradient(to  top left, #060606, #060606 50%, transparent 51%, transparent 100%);
+    }
+
+  
+}
+
+@media screen and (min-width: 820px) and (max-width: 1000px) {
+    .portfolio > h1{
+        margin-left: 0rem;
+    }
+
+    .portfolio > h3{
+        margin-left: 0rem;
+    }
+
+    .ideas_example {
+        padding:  1.5rem;
+        font-size: 10px;
+    }
+
+    .ideas_example_description {     
+        padding: 5rem;
+    }
+    
+    .section_col_grid {
+        margin: 0;
+        gap: 0.5rem;
+    }
+
+    .thumbnail_image {
+        padding: auto;
+    }
+}
+
+
+ 
+   

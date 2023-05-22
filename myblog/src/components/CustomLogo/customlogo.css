@@ -1,0 +1,21 @@
+.layer {
+    position: relative;
+    top: 0rem;
+    width: 65px;
+    border-radius: 6px;
+    padding: 0.1rem;
+    stroke-linejoin: round;
+    stroke-linecap: round;  
+}
+
+.navbar_svg_wrapper:hover {
+    border: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .layer {
+        top: 0.1rem;
+        width: 40px;
+    }
+}
+

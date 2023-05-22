@@ -1,0 +1,74 @@
+.original__benefits__item-form {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    
+}
+
+.original__benefits__item-form-shadow {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: -9%;
+    left: -8%;
+    z-index: -1;
+}
+
+.original__benefits__icon-holder {
+    position: absolute;
+    bottom: -15%;
+    left: 32%;
+    width: 100px;
+    height: 100px;
+}
+
+.original__benefits__icon-svg {
+    position: absolute;
+    bottom: -20%;
+    left: 37%;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .original__benefits__item-form {
+        width: 250px;
+        height: 200px;
+    }
+
+    .original__benefits__item-form-shadow {
+        height: 200px;
+        left: -17.5%;
+    }
+
+    .original__benefits__icon-holder {
+        bottom: -24%;
+        width: 80px;
+    }
+
+    .original__benefits__icon-svg {
+        bottom: -32%;
+        left: 35.8%;
+
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .original__benefits__item-form-shadow {
+        top: 2%;
+    }
+
+    .original__benefits__icon-holder {
+        top: -22%;
+       
+    }
+
+    .original__benefits__icon-svg {
+        top: -13%;
+        left: 35.8%;
+
+    }
+}
+

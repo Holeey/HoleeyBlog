@@ -1,0 +1,141 @@
+
+
+::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+background: rgba(0, 0, 0, 0.799);
+}
+
+::-webkit-scrollbar-thumb {
+background:rgba(67, 209, 238, 0.409);
+border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:rgba(0, 0, 0, 0.500);
+} 
+
+.header_container {
+    background-image: url('../../assets/blog_image.png');
+    background-color: #191919;
+    background-size: contain;
+    padding-bottom: 7rem;
+}
+
+
+.header_text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+
+}
+
+.header_text > h1 {
+    letter-spacing: 0.3rem; 
+    font-size: clamp(0.6rem, 5vw, 60px);
+    color: aliceblue;
+    
+}
+
+span {
+    color: gold;
+}
+
+.header_paragraph { 
+    font-size: clamp(1rem, 3vw, 25px);
+}
+
+.header_foot {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0.35rem 0;
+    cursor: pointer;
+    background-color: #191919; 
+    font-size: clamp(0.6rem, 15px, 3vw);
+    color: aliceblue;
+    border: solid 1px black;
+}
+
+.building_layout,
+.landing_page, 
+.corporate_website {
+    letter-spacing: 0.1em;
+}
+
+
+.building_layout:hover,
+.landing_page:hover,
+.corporate_website:hover {
+    color: orange
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.font_awesome_container {
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    margin-right: 2.5rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+.homepage_facebook, 
+.homepage_twitter,
+.homepage_instagram {
+    font-size: clamp(0.6rem, 4vw, 40px);
+    color: aliceblue;  
+}
+
+.homepage_facebook:hover, 
+.homepage_twitter:hover,
+.homepage_instagram:hover {
+   opacity: 0.5;
+    color: orange
+}
+
+
+/******************** STYLES FOR MEDIA QUERIES **************/
+
+
+@media screen and (max-width: 600px) {
+
+    .header_container {
+       color: aliceblue;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .building_layout:hover,
+    .landing_page:hover,
+    .corporate_website:hover {
+        color: orange;
+        border-left: solid 1px orange;
+        border-right: solid 1px orange;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .header_foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
