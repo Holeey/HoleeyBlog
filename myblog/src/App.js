@@ -5,9 +5,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-  RouterProvider,
-  Switch
-} from "react-router-dom";
+  RouterProvider} from "react-router-dom";
 
 // components
 
