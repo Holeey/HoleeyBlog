@@ -4,7 +4,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-  BrowserRouter
+  RouterProvider,
 } from "react-router-dom";
 
 // components
@@ -28,7 +28,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <Fragment>
-      <BrowserRouter router={router} />
+      < RouterProvider router={router} />
     </Fragment>
   );
 }

@@ -1,6 +1,7 @@
 {
-  "homepage": "https://Holeey.github.io/holeeyblog",
+  
   "name": "myblog",
+  "homepage": "https://holeey.github.io/holeeyblog/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
