@@ -6,6 +6,7 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
+  Switch
 } from "react-router-dom";
 
 // components
@@ -19,12 +20,14 @@ import Contact from './components/ContactPage/Contact';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+    
     <Route path='/' element={<Navbar/>} >
       <Route index element={<HomePage/>} />
       <Route path="portfolio" element={<Portfolio />} />
       <Route path='about' element={<About/>} />
       <Route path='contact' element={<Contact />} />
     </Route>
+   
   )
 )
 
