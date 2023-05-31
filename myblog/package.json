@@ -1,5 +1,4 @@
 {
-  
   "name": "myblog",
   "homepage": "https://holeey.github.io/holeeyblog",
   "version": "0.1.0",
@@ -20,8 +19,8 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "gh-pages-clean": "gh-pages-clean",
+    "deploy": "gh-pages -b gh-pages -d build",
+    "clean": "gh-pages-clean",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -45,6 +44,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.3.0"
   }
 }

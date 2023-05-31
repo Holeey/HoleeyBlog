@@ -33,10 +33,10 @@ const Navbar = () => {
     
     const Menu = () => (
     <div className='menu'>
-    <p><a href='portfolio'>Portfolio</a></p>
-    <p><a href='about'>About</a> </p>
-    <p><a href='contact'>Contact</a> </p>
-    <p> <a href='mailto:odohizuchukwusamuel@gmail.com?subject=Service Inquiry&body= I would like to know...' className='my_email'><FaEnvelope /> odohizuchukwusamuel@gmail.com </a></p>
+    <p><NavLink to='portfolio'>Portfolio</NavLink></p>
+    <p><NavLink to='about'>About</NavLink> </p>
+    <p><NavLink to='contact'>Contact</NavLink> </p>
+    <p> <NavLink to='mailto:odohizuchukwusamuel@gmail.com?subject=Service Inquiry&body= I would like to know...' className='my_email'><FaEnvelope /> odohizuchukwusamuel@gmail.com </NavLink></p>
     </div>
 )
 

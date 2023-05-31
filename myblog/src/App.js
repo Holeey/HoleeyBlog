@@ -1,6 +1,6 @@
 import './App.css';
 import { Fragment } from 'react';
-import { BrowserRouter, Route, RouterProvider, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // components
 import Navbar from './components/Navbar/Navbar';
