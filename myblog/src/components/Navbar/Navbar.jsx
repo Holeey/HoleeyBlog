@@ -33,10 +33,11 @@ const Navbar = () => {
     
     const Menu = () => (
     <div className='menu'>
-    <p><NavLink to='portfolio'>Portfolio</NavLink></p>
-    <p><NavLink to='about'>About</NavLink> </p>
-    <p><NavLink to='contact'>Contact</NavLink> </p>
-    <p> <NavLink to='mailto:odohizuchukwusamuel@gmail.com?subject=Service Inquiry&body= I would like to know...' className='my_email'><FaEnvelope /> odohizuchukwusamuel@gmail.com </NavLink></p>
+    <p ><NavLink to='portfolio' onClick={()=> setMenuToggle(false)}>Portfolio</NavLink></p>
+    <p ><NavLink to='about' onClick={()=> setMenuToggle(false)}>About</NavLink> </p>
+    <p ><NavLink to='contact' onClick={()=> setMenuToggle(false)}>Contact</NavLink> </p>
+    <p > <NavLink to='mailto:odohizuchukwusamuel@gmail.com?subject=Service Inquiry&body= I would like to know...'
+     className='my_email'onClick={()=> setMenuToggle(false)}><FaEnvelope /> odohizuchukwusamuel@gmail.com </NavLink></p>
     </div>
 )
 
