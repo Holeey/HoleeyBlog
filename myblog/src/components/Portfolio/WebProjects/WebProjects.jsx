@@ -10,7 +10,7 @@ const webProjects = [
     id: '01',
     name: 'MendHQ',
     img: mendImage,
-    link: 'https://github.com/Holeey/psychic-enigma/settings/pages',
+    link: 'https://holeey.github.io/psychic-enigma/',
     linkText: 'Open an example website',
     ideaDescription: "volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu"
   },
