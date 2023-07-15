@@ -1,58 +1,81 @@
 .full-control__benefits__item-form {
-   
-    width: 300px;
+    position: relative;
+    width: 250px;
     height: 250px;
-    
+    left: 12%;  
 }
 
 .full-control__benefits__item-form-shadow {
     position: absolute;
-    width: 300px;
-    height: 250px;
-    top: 3%;
-    left: -8%;
+    width: 200px;
+    height: 200px;
+    top: 13%;
+    left: 15%;
     z-index: -1;
 }
 
 .full-control__benefits__icon-holder {
     position: absolute;
-    top: -15%;
-    left: 32%;
+    top: -10%;
+    left: 40%;
     width: 100px;
     height: 100px;
 }
 
 .full-control__benefits__icon-svg {
     position: absolute;
-    top: -10%;
-    left: 35%;
+    top: -5%;
+    left: 43.5%;
     width: 100px;
     height: 100px;
 }
 
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
     .full-control__benefits__item-form {
-        width: 250px;
+        width: 230px;
         height: 200px;
     }
 
     .full-control__benefits__item-form-shadow {
-        top: 0rem;
-        left: -17.5%;
+        top: 3%;
+        left: 13%;
+        width: 190px;
         height: 200px;
     }
 
     .full-control__benefits__icon-holder {
         top: -22%;
+        left: 40%;
         width: 80px;
 
     }
 
     .full-control__benefits__icon-svg {
         top: -13%;
-        left: 33%;
+        left: 41.5%;
     }
 }
+
+@media screen and (max-width: 479px) {
+    .full-control__benefits__item-form {
+        width: 220px;
+    }
+
+    .full-control__benefits__item-form-shadow {
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .full-control__benefits__icon-holder {
+        top: -10%;
+    }
+
+    .full-control__benefits__icon-svg {
+        top: -2%;
+    }
+}
+
 

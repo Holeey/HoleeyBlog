@@ -1,16 +1,14 @@
-
-
 ::-webkit-scrollbar {
     width: 0.8em;
 }
 
 ::-webkit-scrollbar-track {
-background: rgba(0, 0, 0, 0.799);
+    background: rgba(0, 0, 0, 0.799);
 }
 
 ::-webkit-scrollbar-thumb {
-background:rgba(67, 209, 238, 0.409);
-border-radius: 100vw;
+    background:rgba(67, 209, 238, 0.409);
+    border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -19,11 +17,13 @@ border-radius: 100vw;
 
 .header_container {
     background-image: url('../../assets/blog_image.png');
+    padding-inline: 0;
+    padding-block: 10rem;
+    
     background-color: #191919;
     background-size: contain;
-    padding-bottom: 7rem;
+    min-height: 100%;
 }
-
 
 .header_text {
     position: relative;
@@ -32,15 +32,12 @@ border-radius: 100vw;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 3rem;
-
 }
 
 .header_text > h1 {
     letter-spacing: 0.3rem; 
     font-size: clamp(0.6rem, 5vw, 60px);
-    color: aliceblue;
-    
+    color: aliceblue;   
 }
 
 span {
@@ -52,14 +49,15 @@ span {
 }
 
 .header_foot {
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
-    grid-auto-rows: minmax(100px, auto);
+    display: flex;
+    max-width: 100%;
+    min-height: 100%;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+    grid-auto-rows: minmax(100px, auto); */
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    padding: 0.35rem 0;
+    padding: 2rem;
     cursor: pointer;
     background-color: #191919; 
     font-size: clamp(0.6rem, 15px, 3vw);
@@ -71,8 +69,8 @@ span {
 .landing_page, 
 .corporate_website {
     letter-spacing: 0.1em;
+    width: 25%;
 }
-
 
 .building_layout:hover,
 .landing_page:hover,
@@ -89,11 +87,10 @@ h6 {
     position: absolute;
     display: flex;
     gap: 1rem;
-    margin-right: 2.5rem;
-    width: 100%;
+    top: 35%;
+    left: 2%;
+    max-width: 100%;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
     z-index: 1;
 }
 

@@ -1,74 +1,104 @@
 .original__benefits__item-form {
     position: relative;
-    width: 300px;
+    width: 240px;
     height: 250px;
+    left: 12%;
     
 }
 
 .original__benefits__item-form-shadow {
     position: absolute;
-    width: 300px;
-    height: 250px;
-    top: -9%;
-    left: -8%;
+    width: 200px;
+    height: 200px;
+    top: 4%;
+    left: 12.2%;
     z-index: -1;
 }
 
 .original__benefits__icon-holder {
     position: absolute;
-    bottom: -15%;
-    left: 32%;
+    bottom: -8%;
+    left: 42%;
     width: 100px;
     height: 100px;
 }
 
 .original__benefits__icon-svg {
     position: absolute;
-    bottom: -20%;
-    left: 37%;
+    bottom: -15%;
+    left: 48%;
     width: 100px;
     height: 100px;
 }
 
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
     .original__benefits__item-form {
-        width: 250px;
-        height: 200px;
-    }
-
-    .original__benefits__item-form-shadow {
-        height: 200px;
-        left: -17.5%;
-    }
-
-    .original__benefits__icon-holder {
-        bottom: -24%;
-        width: 80px;
-    }
-
-    .original__benefits__icon-svg {
-        bottom: -32%;
-        left: 35.8%;
-
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .original__benefits__item-form-shadow {
-        top: 2%;
-    }
-
-    .original__benefits__icon-holder {
-        top: -22%;
        
+        width: 220px;
+        height: 200px;
+      
+        
+    }
+    
+    .original__benefits__item-form-shadow {
+        width: 190px;
+        height: 200px;
+        top: -7%;
+        left: 11%;
+
+    }
+
+    .original__benefits__icon-holder {
+        width: 80px;
+        bottom: -18%;
+        left: 40%;
     }
 
     .original__benefits__icon-svg {
-        top: -13%;
-        left: 35.8%;
-
+        bottom: -26%;
+       left: 44%;
     }
 }
 
+@media screen and (max-width: 479px) {
+    .original__benefits__item-form {
+        width: 200px;
+
+    }
+
+    .original__benefits__item-form-shadow {
+        left: 15%;
+        top: -10%;
+        width: 155px;
+    }
+
+    .original__benefits__icon-holder {
+        left: 35%;
+    }
+
+    .original__benefits__icon-svg {
+        left: 39%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .original__benefits__item-form {
+        left: 23%;
+    }
+
+    .original__benefits__item-form-shadow {
+        left: 25%;
+    }
+
+    .original__benefits__icon-holder {
+        top: -11%;
+        left: 68%;
+    }
+
+    .original__benefits__icon-svg {
+        top: -2%;
+        left: 72%;
+    }
+}

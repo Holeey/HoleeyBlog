@@ -1,9 +1,10 @@
 import React, { Fragment, useState } from 'react'
 import './portfolio.css'
-//import ideas_image from '../../assets/blog_image.png';
+import ideas_image from '../../assets/blog_image.png';
 import { AnimatePresence, motion } from 'framer-motion';
 import WebProjects from './WebProjects/WebProjects';
-import mendImage from '../../assets/mendScreenshot.png'
+
+//import mendImage from '../../assets/mendScreenshot.png'
 
 
 const Portfolio = () => {
@@ -29,7 +30,7 @@ const Portfolio = () => {
             
         <img   
             onMouseEnter={()=> setIsVisible(true)}  
-            src={mendImage}  alt='thumbnail' />
+            src={ideas_image}  alt='thumbnail' />
             <AnimatePresence mode='wait'>
             {isVisible &&  <motion.a
              onMouseLeave={()=> setIsVisible(null)}
@@ -39,7 +40,7 @@ const Portfolio = () => {
              transition= 'transition'
              exit= 'exit'
         
-             href={'https://github.com/Holeey/psychic-enigma/settings/pages'} target={'_blank'}>
+             href={'https://holeey.github.io/psychic-enigma/'} target={'_blank'}>
 
              <div className='overlay'></div>    
               <span className='link_text'>Open an example website </span>
@@ -47,7 +48,8 @@ const Portfolio = () => {
             </AnimatePresence>
               </div>
             </div>
-            <div className='ideas_example_description  reverse-right_angle' >Here you can choose an idea which will fit well to your project</div>
+            <div className='ideas_example_description  reverse-right_angle' >
+             Here you can choose an idea which will fit well to your project </div>
           </section>       
          <WebProjects />
         

@@ -17,7 +17,7 @@ function ScrollToTopButton() {
 
   function handleScroll() {
     // Check if the user has scrolled more than 200px
-    if (window.pageYOffset > 200) {
+    if (window.scrollY > 200) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

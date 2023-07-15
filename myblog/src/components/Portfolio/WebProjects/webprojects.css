@@ -1,3 +1,12 @@
+.website_main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    
+}
+
 .website_ideas_example_description:hover,
 .website_ideas_example:hover {
     transform: translate3d(1%, 0, 0);
@@ -5,8 +14,7 @@
 }
 
 .description_container {
-    max-width: 800px;
-    
+    max-width: 100%;
 }
 
 .description_container > p {
@@ -15,6 +23,14 @@
 
 .project_name_container > p {
     font-size: 30px;
+}
+
+.descr_and_Img__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    letter-spacing: 0.15rem;  
 }
 
 .website_ideas_example_description,
@@ -26,12 +42,12 @@
     color: aliceblue;
     background-color: #191919;
     box-shadow: 3px 3px 4px #0c0c0c;
+    
 }
 
 .website_ideas_example_description {
     text-align: left;   
-    max-width: 100%;
-    padding: 2rem 5rem;
+    padding: 3rem;
 }
 
 .website_ideas_example {
@@ -39,11 +55,10 @@
     width: 500px;
 }
 
+
 .flex {
     display: flex;
-    flex-direction: row;
     gap: 1.5rem;
-    margin-inline: 5rem;
     margin-block-end: 2rem;
 }
 
@@ -51,8 +66,7 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 1.5rem;
-    margin-inline: 5rem;
-    margin-block-end: 5rem;
+    margin-block-end: 2rem;
 }
 
 .website_link_text {
@@ -60,7 +74,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -1rem;
+    top: -2rem;
     padding: 5rem 0;
     color: #000;
     font-size: clamp(0.6rem, 5vw, 20px);
@@ -95,7 +109,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 0;
+    padding: 4rem;
     background: #060606;
     overflow: hidden;
     border-radius: 5px;
@@ -161,7 +175,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     h2 {
         padding: 0.5rem;
         position: relative;
@@ -171,36 +185,52 @@ h2 {
     .flex {
         position: relative;
         top: 2rem;
-        margin: 3rem 0rem;
         flex-wrap: wrap-reverse;
-        gap: 0rem;
+        max-width: 100%;
        
     }
     
     .reverse-flex {
         position: relative;
         top: 3rem;
-        margin: 3rem 0rem;
+       
         flex-wrap: wrap-reverse;
-        gap: 0rem;
+        max-width: 100%;
+        
     }
 
     .website_ideas_example_description {
         display: flex;
-        flex-wrap: wrap;
+        padding-inline: 1rem;
+        
+        
+    }
+
+    .descr_and_Img__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        text-align: center;  
+        
     }
 
     .website_ideas_example_description > p {
-      font-size: 15px;
+      font-size: 20px;
+      
     }
 
+    .project_name_container > p {
+        font-size: 20px;
+    }
+/*
     .website_ideas_example {
         width: 100%;
     }
-
+*/
     .website_right_angle:hover {
         border: none;
-        
     }
     
     .website_reverse-right_angle:hover {
@@ -227,12 +257,10 @@ h2 {
          background: linear-gradient(to top left, #060606 , #060606 50%, transparent 51%, transparent 100%);
          padding: 0.7rem;
      } 
-
-
 }
 
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 640px) and (max-width: 999px) {
     h2 {
         padding: 0.5rem;
         position: relative;
@@ -242,19 +270,15 @@ h2 {
     .flex {
         position: relative;
         top: 2rem;
-        margin: 3rem 0rem;
-        flex-wrap: wrap-reverse;
-        gap: 0rem;
-       
+        flex-wrap: wrap-reverse;      
     }
     
     .reverse-flex {
         position: relative;
         top: 3rem;
-        margin: 3rem 0rem;
         flex-wrap: wrap-reverse;
-        gap: 0rem;
     }
+
 
     .website_ideas_example_description {
         display: flex;
@@ -300,10 +324,10 @@ h2 {
      } 
  
 }
-
+/*
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
     .website_thumbnail_image {
         padding: 4rem;
     }
-}
+}*/

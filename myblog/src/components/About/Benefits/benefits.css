@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 
-
-
 .benefits {
     background-color: #242424;
     padding-bottom: 0rem; 
@@ -38,7 +36,7 @@
     max-width: 100%;
  }
 
- .benefits__container {
+.benefits__container {
     max-width: 100%;
 }
 
@@ -52,61 +50,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8rem;
+    max-width: 100%;
 }
 
 .container {
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1258px;
-    margin: 0;
-    padding: 0 10px;
-}
-
-.benefits__rows--1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 6rem;
-    max-width: 100%;
-}
-
-.benefits__rows--2{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 6rem;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-}
-
-.benefits__rows--3{
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-}
-
-.benefits__item__group__wrapper--1 {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: center;
-    max-width: 100%;
-    gap: 2.5rem; 
-}
-
-.benefits__item__group__wrapper--2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem 0.5rem;
-    gap: 2rem;
-    flex-wrap: nowrap; 
+    width: 900px;
+    height: 750px;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
 }
 
 .benefits__item-caption {
@@ -115,28 +71,146 @@
     padding-bottom: 1rem;    
 }
 
-
 .benefits__item-content {
     position: relative;
     margin-top: -0.1rem ;
     padding: 0.3rem ;
     font-size: 0.875rem;
-    max-height: 122px;
+    max-height: 84px;
     width: 190px;
     overflow-y: auto;
     margin-left: -3rem;
 }
 
-.benefits__item  { 
-    position: relative;
+.polygon_svg_width {
+    width: 250px;
+}
+
+.benefits__polygon-full_control {
+    position: absolute;
+    top: 11%; 
+    left: 35%;
+    transform: translateY(-17%);  
+}
+
+.benefits__item_full__control  { 
+    position: absolute;
     display: flex;
+    top: 20%;
+    left: 10%;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 128px;
+    padding: 0 5px;
+    text-align: center;  
+}
+
+.benefits__polygon-timeliness {
+    position: absolute;
+    top: 35%; 
+    right: 22%;
+    transform: translateY(-17%);  
+}
+
+.benefits__item-timeliness  { 
+    position: absolute;
+    display: flex;
+    top: 18%;
+    left: 8%;
     align-items: center;
     justify-content: center;
     width: 250px;
     height: 128px;
     padding: 0 5px;
     text-align: center;
-    cursor: pointer;   
+     
+}
+
+.benefits__polygon-high_quality {
+    position: absolute;
+    top: 35%; 
+    left: 22%;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-17%);  
+}
+
+.benefits__item-high_quality  { 
+    position: absolute;
+    display: flex;
+    top: 18%;
+    left: 8%;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 128px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.benefits__polygon-individual_approach {
+    position: absolute;
+    bottom: 7%; 
+    left: 8%;
+    transform: translateY(-17%);  
+}
+
+.benefits__item-individual_approach  { 
+    position: absolute;
+    display: flex;
+    top: 20%;
+    left: 8%;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 128px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.benefits__polygon-original_layout {
+    position: absolute;
+    bottom: 7%; 
+    left: 35.5%;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-17%);  
+}
+
+.benefits__item-original_layout  { 
+    position: absolute;
+    display: flex;
+    top: 18%;
+    left: 10%;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 128px;
+    padding: 0 5px;
+    text-align: center;  
+}
+
+.benefits__polygon-discount {
+    position: absolute;
+    bottom: 7%; 
+    right: 9%;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-17%);  
+}
+
+.benefits__item-discount  { 
+    position: absolute;
+    display: flex;
+    top: 18%;
+    left: 10%;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 128px;
+    padding: 0 5px;
+    text-align: center;  
 }
 
 .benefits__item-content::-webkit-scrollbar-track {
@@ -154,14 +228,6 @@
     background: #060606;
 }
 
-.benefits__polygon {
-    position: absolute;
-    top: 0; 
-    margin: 0;
-    padding: 0;
-    transform: translateY(-17%);  
-}
-
 .benefits_item_title {
     align-items: center;
     font-size: 15px;
@@ -176,97 +242,246 @@
      }
 }
 
-@media screen and (min-width: 380px) and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
 
- .benefits__rows--1 {
-    margin-bottom: 3rem;
- }
+    .container {
+        max-width: 700px;
+    }
 
- .benefits__rows--2 {
-    margin-bottom: 4rem;
-    gap: 0;
- }  
+    .benefits__item-content {
+        width: 170px;
+    }
 
-.benefits__rows--3 {
-   margin-bottom: 0;
-    gap: 0;    
+    .benefits__polygon-full_control {
+        top: 11%; 
+        left: 30%;
+ 
+    }
+
+    .benefits__polygon-timeliness {
+        top: 35%; 
+        right: 15%;
+    
+    }
+
+    .benefits__polygon-high_quality {
+        top: 35%; 
+        left: 15%;  
+    }
+
+    .benefits__polygon-individual_approach {
+        bottom: 14%;
+        left: 1%;
+    }
+
+    .benefits__polygon-original_layout {
+        bottom: 14%;
+        left: 31%;
+    }
+
+    .benefits__item-original_layout {
+        left: 6%;
+    }
+
+
+    .benefits__polygon-discount {
+        bottom: 14%;
+        right: 2%;
+    }
+
+    .benefits__item-content {
+        line-height: 120%;
+        max-width: 200px;
+        max-height: 100px;
+    }
+
 }
 
-.benefits__item__group__wrapper--1 {
-   gap: 0;
-   max-width: 400px;  
+@media screen and (max-width: 800px) {
+    .container {
+        max-width: 600px;       
+    }
+
+    .benefits__polygon-full_control {
+        top: 9%; 
+        left: 28%;
+ 
+    }
+
+    .benefits__polygon-timeliness {
+        top: 30%; 
+        right: 14%;
+    }
+
+    .benefits__polygon-high_quality {
+        top: 30%; 
+        left: 10%;  
+    }
+
+    .benefits__polygon-individual_approach {
+        bottom: -1%; 
+        left: 10%;
+    }
+
+    .benefits__polygon-original_layout {
+        bottom: 21.5%; 
+        left: 28%;
+    }
+
+    .benefits__item-original_layout {
+        left: 6%;
+    }
+
+    .benefits__polygon-discount {
+        bottom: -1%;;
+        right: 14%;
+    }
 }
 
-.benefits__item__group__wrapper--2 {
-    max-width: 400px;
-    margin: 1rem 0;
-    gap: 0;
+
+@media screen and (max-width: 630px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .benefits__polygon-full_control {
+        top: 9.5%; 
+        left: 23%;
+    }
+
+    .benefits__polygon-timeliness {
+        top: 29%; 
+        right: 4%;
+    }
+
+    .benefits__polygon-high_quality {
+        top: 29%; 
+        left: 1.5%; 
+    }
+
+    .benefits__polygon-individual_approach {
+        bottom: 0%; 
+        left: 1.5%;
+    }
+
+    .benefits__polygon-original_layout {
+        bottom: 23%; 
+        left: 23%;
+    }
+
+    .benefits__polygon-discount {
+        bottom: 0%;;
+        right: 4%;
+    }
 }
 
-.benefits__item  { 
-    width: 200px;
-    height: 120px;
-    padding: 0 5px;
+@media screen and (max-width: 530px) {
+    .benefits__polygon-full_control {
+        left: 23%;  
+    }
+
+    .benefits__polygon-original_layout {   
+        left: 23%;
+    }
+
+    .container {
+        overflow: hidden;
+    }
 }
 
-.benefits__item-content {
-    line-height: 120%;
-    max-width: 180px;
-    max-height: 100px;
-}
-}
-
-@media screen and (max-width: 750px) {
-   .benefits__rows--3 {
-    flex-wrap: wrap-reverse;
-   }
-
-   .benefits__item__group__wrapper--2 {
-    max-width: 400px;
-    margin: 4.5rem 0;
-    gap: 0;
- }
-}
-
-
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 479px) {
     .title {
     padding-inline-start: 0.5rem;
-}
-    .benefits__item__group__wrapper--1 {
-    width: 100%;
-    gap: 6rem;
-    flex-wrap: wrap;
- }
+    }
 
- .benefits__rows--2 {
-    margin-bottom: 6rem;
- }
+    .benefits__item  { 
+        width: 170px;
+        height: 150px;
+        padding: 0;   
+    }
 
- .benefits__item__group__wrapper--2 {
-    width: 100%;
-    justify-content: center;
-    margin-top: 5rem;
-    gap: 8rem;
-    flex-wrap: wrap;
- }
-    
- .benefits__item  { 
-    width: 170px;
-    height: 150px;
-    padding: 0;   
+    .benefits__item  { 
+        width: 200px;
+        height: 120px;
+        padding: 0 5px;
+    }
+
+    .benefits__item-content {
+        line-height: 120%;
+        max-width: 175px;
+        max-height: 80px;
+    }
+
+    .benefits__polygon-full_control {
+        left: 20%;
+    }
+
+    .benefits__item_full__control {
+        left: 6%;
+    }
+
+    .benefits__item-high_quality {
+        left: -8.5%;
+    }
+
+    .benefits__item-timeliness {
+        left: 28%;
+    }
+
+    .benefits__item-individual_approach {
+        left: -7.5%;
+    }
+
+    .benefits__polygon-original_layout {
+        left: 20%;
+    }
+
+    .benefits__item-original_layout {
+        left: 4%;
+    }
+
+    .benefits__item-discount {
+        left: 27%;
+    }
+
 }
 
-.benefits__item  { 
-    width: 200px;
-    height: 120px;
-    padding: 0 5px;
-}
+@media screen and (max-width: 360px) {
+    .container {
+        width: 300px;
+        height: 1000px;
+    }
 
-.benefits__item-content {
-    line-height: 120%;
-    max-width: 180px;
-    max-height: 100px;
-}
- 
+    .benefits__polygon-full_control {
+        top: 5%;
+        left: 0;
+    }
+
+    .benefits__polygon-timeliness {
+        right: 0;
+        top: 20%;
+    }
+
+    .benefits__polygon-high_quality {
+        left: 0;
+        top: 32%;
+    }
+
+    .benefits__polygon-original_layout {
+        right: 0;
+        bottom: 34.5%;
+    }
+
+    .benefits__item-original_layout {
+        left: 15%;
+    }
+
+    .benefits__polygon-individual_approach {
+        bottom: 22.5%;
+    }
+
+    .benefits__polygon-discount {
+        right: 0;
+        bottom: 10%;
+    }
 }

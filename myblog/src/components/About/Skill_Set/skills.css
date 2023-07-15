@@ -49,6 +49,7 @@
     width: 450px;
     height: 300px;
     text-align: center;
+   
 }
 
 .skill_item {
@@ -71,8 +72,9 @@
 }
 
 .skill__item--1 {
-    top:  -10%;
+    top:  -17%;
     left: 52%;
+    
 }
 
 .skill__item--2 {
@@ -86,17 +88,17 @@
 }
 
 .skill__item--4 {
-    bottom:  -9%;
+    bottom: -14%;
     left: 52%; 
 }
 
 .skill__item--5 {
-    top: -10%;
+    top: -17%;
     left: 20%;  
 }
 
 .skill__item--6 {
-    bottom:  -9%;
+    bottom: -14%;
     left: 25%; 
 }   
 
