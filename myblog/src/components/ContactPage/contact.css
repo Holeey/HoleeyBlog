@@ -4,13 +4,13 @@
 }
 
 .contact__section {
-    padding-block-start: 3rem;
+    padding-block-start: 5rem;
     background-color: black;
     color: aliceblue;
 }
 
 .contact__title {
-    padding-left: 6rem;
+    padding-left: 5rem;
     font-size: clamp(0.6rem, 25px, 3vw);
 }
 
