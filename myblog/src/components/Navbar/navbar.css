@@ -89,7 +89,7 @@ a, button {
     cursor: pointer;
 }
 
-.menu_list a, p {
+a, p {
     display: flex;
     color: aliceblue;
     padding: 1rem 1.5rem;
@@ -107,6 +107,33 @@ a, button {
 
 
 /* MEDIA QUERIES STYLES */
+
+@media only screen and (orientation: landscape) {
+    /* CSS styles for landscape screens go here */
+    .menu_list {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(22,22,22,0.9);
+        top: 4.1rem;
+        right: 0;
+        padding-top : 8rem;
+        text-align: center;
+        max-width: 400px;  
+        height: 100%; 
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        
+    }
+
+    a, p {
+        padding: 0;
+    }
+
+  }
+  
 
 @media screen and (max-width: 1000px)  {
     .navbar {
