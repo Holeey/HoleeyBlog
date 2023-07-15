@@ -4,8 +4,7 @@
     justify-content: space-evenly;
     background: #191919;
     padding: 1rem;
-    font-size: 25px;
-   
+    font-size: 25px; 
 }
 
 .my_email {
@@ -50,6 +49,9 @@ a, button {
 }
 
 .mobile_Menu {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,8 +73,7 @@ a, button {
     right: 0;
     padding: 2rem 0;
     text-align: center;
-    width: 100%;
-    z-index: 2;
+    width: 100%;    
 }
 
 .mdClose,
@@ -91,7 +92,7 @@ a, button {
 .menu_list a, p {
     display: flex;
     color: aliceblue;
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
     font-size: 18px;
     font-weight: 400;
     max-width: fit-content;
