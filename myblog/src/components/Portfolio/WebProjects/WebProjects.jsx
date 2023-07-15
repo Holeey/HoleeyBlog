@@ -12,7 +12,7 @@ const webProjects = [
     img: mendImage,
     link: 'https://github.com/Holeey/psychic-enigma/settings/pages',
     linkText: 'Open an example website',
-    ideaDescription: "React store prototype If you want to create a real store app then it's possible to set up 3d models so clients will be able to customize it (with the change of color and size the price will change respectively).",
+    ideaDescription: "volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu"
   },
   /*{
     id: '02',
