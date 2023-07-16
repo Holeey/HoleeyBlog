@@ -15,6 +15,9 @@
 
 .description_container {
     max-width: 100%;
+    padding: 0;
+    text-align: center;
+    pointer-events: none;
 }
 
 .description_container > p {
@@ -29,6 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     padding: 0.5rem;
     letter-spacing: 0.15rem;  
 }
@@ -59,37 +63,33 @@
 .flex {
     display: flex;
     gap: 1.5rem;
-    margin-block-end: 2rem;
+    margin: 1rem;
 }
 
 .reverse-flex {
     display: flex;
     flex-direction: row-reverse;
     gap: 1.5rem;
-    margin-block-end: 2rem;
+    margin: 1rem;
 }
 
-.website_link_text {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: -2rem;
-    padding: 5rem 0;
-    color: #000;
-    font-size: clamp(0.6rem, 5vw, 20px);
-    font-weight: 700;
-    text-align: center;
-    background-color:  #f5f5dc;
-    opacity: 0.7;
-}
 
 .website_thumbnail_image > a {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
+    font-weight: 500;
     text-decoration: none;
+    color: #000;
+    background-color:  #f5f5dc;
+    
+   
 }
 
 img {
@@ -114,6 +114,7 @@ img {
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 3px 3px 4px #0c0c0c;
+    text-align: center;
 }
 
 h2 {
@@ -175,7 +176,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
     h2 {
         padding: 0.5rem;
         position: relative;
@@ -187,16 +188,13 @@ h2 {
         top: 2rem;
         flex-wrap: wrap-reverse;
         max-width: 100%;
-       
     }
     
     .reverse-flex {
         position: relative;
         top: 3rem;
-       
         flex-wrap: wrap-reverse;
-        max-width: 100%;
-        
+        max-width: 100%; 
     }
 
     .website_ideas_example_description {
@@ -221,14 +219,15 @@ h2 {
       
     }
 
+    .website_ideas_example {
+        width: 720px;
+        padding: 0.5rem;
+    }
+
     .project_name_container > p {
         font-size: 20px;
     }
-/*
-    .website_ideas_example {
-        width: 100%;
-    }
-*/
+
     .website_right_angle:hover {
         border: none;
     }
@@ -260,7 +259,7 @@ h2 {
 }
 
 
-@media screen and (min-width: 640px) and (max-width: 999px) {
+@media screen and (min-width: 720px) and (max-width: 999px) {
     h2 {
         padding: 0.5rem;
         position: relative;
@@ -325,7 +324,6 @@ h2 {
  
 }
 /*
-
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
     .website_thumbnail_image {
         padding: 4rem;

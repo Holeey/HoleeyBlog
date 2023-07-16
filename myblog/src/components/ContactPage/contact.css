@@ -157,11 +157,18 @@ input:focus,
     max-width: 100%;
 }
 
-.social__media__container {
+.social__media__container  {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    max-width: 100%;
+    justify-content: space-between;
+}
+
+.social__media__container p {
+    padding: 0.5rem;
+}
+
+.social__media__container a:hover {
+    color: #ca8c19;
 }
 
 .prefered__method__wrapper {

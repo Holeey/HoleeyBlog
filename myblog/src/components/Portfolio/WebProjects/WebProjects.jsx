@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../../Navbar/Navbar_footer/Footer';
 import './webprojects.css';
 import { motion, AnimatePresence } from 'framer-motion';
-//import ideas_image from '../../../assets/blog_image.png';
+import ideas_image from '../../../assets/blog_image.png';
 import mendImage from '../../../assets/mendScreenshot.png'
 
 const webProjects = [
@@ -14,7 +14,7 @@ const webProjects = [
     linkText: 'Open an example website',
     ideaDescription: "volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu"
   },
-  /*{
+ {
     id: '02',
     name: 'TitTok',
     img: ideas_image,
@@ -29,7 +29,7 @@ const webProjects = [
     link: 'https://github.com/Holeey/psychic-enigma/settings/pages',
     linkText: 'Open an example website',
     ideaDescription: "Very interesting technology of transition between pages. This effect will definitely imprint website of this financial agency in the visitors mind, which later will help convert them to the real clients!",
-  }*/
+  }/* */
 ];
 
 const WebProjects = () => {
@@ -57,7 +57,8 @@ const WebProjects = () => {
         
         <section key={project.id} className={`flex ${(project.id % 2 !== 0) ? '' : 'reverse-flex'}`}>
           <div className={`website_ideas_example_description ${(project.id % 2 !== 0) ? 'website_right_angle' : 'website_reverse-right_angle'}`}>
-            <div className='descr_and_Img__container'> <div className='description_container'>
+            <div className='descr_and_Img__container'> 
+            <div className='description_container'>
               <p>{project.ideaDescription}</p>
             </div>
             <div className='website_thumbnail_image'>
@@ -77,8 +78,8 @@ const WebProjects = () => {
                     exit='exit'
                     href={project.link}
                     target='_blank'
-                  >
-                    <span className='website_link_text'>{project.linkText}</span>
+                  >{project.linkText}
+                   
                   </motion.a>
                 }
               </AnimatePresence>

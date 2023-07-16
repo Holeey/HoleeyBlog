@@ -80,6 +80,7 @@
     width: 190px;
     overflow-y: auto;
     margin-left: -3rem;
+    color: aliceblue;
 }
 
 .polygon_svg_width {

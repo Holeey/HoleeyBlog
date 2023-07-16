@@ -41,9 +41,8 @@ const Portfolio = () => {
              exit= 'exit'
         
              href={'https://holeey.github.io/psychic-enigma/'} target={'_blank'}>
-
-             <div className='overlay'></div>    
-              <span className='link_text'>Open an example website </span>
+              
+              Open an example website 
               </motion.a> }
             </AnimatePresence>
               </div>

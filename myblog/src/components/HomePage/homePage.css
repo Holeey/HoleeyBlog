@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-    width: 0.8em;
+    width: 0.5em;
 }
 
 ::-webkit-scrollbar-track {
@@ -7,22 +7,21 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background:rgba(67, 209, 238, 0.409);
+    background: rgb(236, 185, 2);
     border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background:rgba(0, 0, 0, 0.500);
+    background:rgb(177, 167, 140);
 } 
 
 .header_container {
     background-image: url('../../assets/blog_image.png');
     padding-inline: 0;
-    padding-block: 10rem;
-    
+    padding: 7rem 0;
     background-color: #191919;
     background-size: contain;
-    min-height: 100%;
+    max-height: 1000px;
 }
 
 .header_text {
@@ -46,18 +45,17 @@ span {
 
 .header_paragraph { 
     font-size: clamp(1rem, 3vw, 25px);
+    color: aliceblue;
 }
 
 .header_foot {
     display: flex;
-    max-width: 100%;
-    min-height: 100%;
-  /* grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
-    grid-auto-rows: minmax(100px, auto); */
+    width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
     cursor: pointer;
     background-color: #191919; 
     font-size: clamp(0.6rem, 15px, 3vw);
@@ -112,10 +110,13 @@ h6 {
 /******************** STYLES FOR MEDIA QUERIES **************/
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 
     .header_container {
        color: aliceblue;
+       height: 1000px;
+       max-height: fit-content;
+       padding-top: 6rem;
     }
 }
 

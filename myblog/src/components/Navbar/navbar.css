@@ -89,7 +89,7 @@ a, button {
     cursor: pointer;
 }
 
-a, p {
+.menu a {
     display: flex;
     color: aliceblue;
     padding: 1rem 1.5rem;
@@ -98,6 +98,7 @@ a, p {
     max-width: fit-content;
     flex-wrap: wrap;
 }
+
 
 .menu_list a:hover {
     color: orange;
@@ -117,18 +118,17 @@ a, p {
         justify-content: center;
         flex-direction: column;
         background: rgba(22,22,22,0.9);
-        top: 4.1rem;
+        top: 4rem;
         right: 0;
-        padding-top : 8rem;
+        padding-top : 12rem;
         text-align: center;
         max-width: 400px;  
         height: 100%; 
         overflow-y: scroll;
-        scroll-behavior: smooth;
-        
+        scroll-behavior: smooth;        
     }
 
-    a, p {
+    menu a {
         padding: 0;
     }
 

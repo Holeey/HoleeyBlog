@@ -38,7 +38,7 @@
 }
 
 .ideas_example_description {
-    text-align: center;    
+    text-align: center;   
 }
 
 
@@ -59,28 +59,20 @@
 }
 
 
-.link_text {
-    position: relative;
+.thumbnail_image > a {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -1rem;
-    color: #000;
-    font-size: clamp(0.6rem, 5vw, 20px);
-    font-weight: 700;
-    text-align: center;
-    background-color: #f5f5dc;
-    opacity: 0.7;
-    padding: 5rem 0;
-
-}
-
-.thumbnail_image > a {
-    position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
+    font-weight: 500;
     text-decoration: none;
+    color: #000;
+    background-color:  #f5f5dc;
 }
 
 
@@ -153,6 +145,7 @@ img {
 
 
 @media screen and (max-width: 819px) {
+
     .portfolio > h1{
         margin-left: 0rem;
     }
@@ -167,7 +160,8 @@ img {
     }
 
     .ideas_example_description {     
-        padding: 1.5rem 0.5rem;
+        padding: 1.5rem 0.5rem; 
+        pointer-events: none; 
     }
     
     .section_col_grid {
