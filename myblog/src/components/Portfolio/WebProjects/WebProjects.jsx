@@ -14,7 +14,7 @@ const webProjects = [
     linkText: 'Open an example website',
     ideaDescription: "volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu"
   },
- {
+ /*{
     id: '02',
     name: 'TitTok',
     img: ideas_image,
@@ -29,7 +29,7 @@ const webProjects = [
     link: 'https://github.com/Holeey/psychic-enigma/settings/pages',
     linkText: 'Open an example website',
     ideaDescription: "Very interesting technology of transition between pages. This effect will definitely imprint website of this financial agency in the visitors mind, which later will help convert them to the real clients!",
-  }/* */
+  }*/
 ];
 
 const WebProjects = () => {

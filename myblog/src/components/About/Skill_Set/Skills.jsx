@@ -8,7 +8,7 @@ const skill_inventory = [
     { id: '01', skill: 'HTML CSS', skillDescription: 'Responsive Design'},
     { id: '02', skill: 'svg Animation', skillDescription: 'Stunning UI/UX'},
     { id: '03', skill: 'Java Script', skillDescription: 'The language of the web'},
-    { id: '04', skill: 'motion Graphic', skillDescription: 'Helps to leave a lasting impression on clients'},
+    { id: '04', skill: 'Git & Github', skillDescription: 'A version control system that helps in the workflow of projects'},
     { id: '05', skill: 'SCSS framerMotion', skillDescription: 'I can work with popular css libraries'},
     { id: '06', skill: 'React jQuery', skillDescription: 'I can work with popular js libraries and framework'},
 ]
@@ -21,6 +21,7 @@ const Skills = () => {
     const svg_skill_animation = {
         initial: {y: -100, opacity: 0 },
         animate: {y: 0, opacity: 1, transition: {ease: 'easeInOut', duration: 1 }},
+        
     }
 
 
@@ -49,7 +50,7 @@ const Skills = () => {
                     onMouseOver={()=>  setToggle_svg_background(true)}
                       
                     onMouseLeave={()=> setToggle_skill_descr_id(null)}
-                    onMouseOut={()=> setToggle_svg_background(null)}>
+                    onMouseOut={()=> setToggle_svg_background(false)}>
                     <p>{item.skill}</p>
                     </div>
                     {toggle_skill_descr_id && toggle_skill_descr_id.id === item.id && 
@@ -59,6 +60,7 @@ const Skills = () => {
                     variants={svg_skill_animation} 
                     initial= 'initial'
                     animate= 'animate'
+                    
                   >
                     <p>
                     {item.skillDescription}

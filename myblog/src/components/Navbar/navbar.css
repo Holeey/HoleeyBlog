@@ -1,10 +1,13 @@
 .navbar {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background: #191919;
     padding: 1rem;
     font-size: 25px; 
+    z-index: 2;
+    width: 100%;
 }
 
 .my_email {
