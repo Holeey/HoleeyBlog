@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../../Navbar/Navbar_footer/Footer';
 import './webprojects.css';
 import { motion, AnimatePresence } from 'framer-motion';
-import ideas_image from '../../../assets/blog_image.png';
+//import ideas_image from '../../../assets/blog_image.png';
 import mendImage from '../../../assets/mendScreenshot.png'
 
 const webProjects = [

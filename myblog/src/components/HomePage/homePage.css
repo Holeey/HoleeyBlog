@@ -59,7 +59,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    top:  7rem;
+    top: 30%;
+    width: 100%;
+    padding: 0;
+    height: 150px;
 }
 
 .header_text > h1 {
@@ -76,6 +79,7 @@ span {
     font-size: clamp(1rem, 3vw, 25px);
     color: aliceblue;
 }
+
 
 .building_layout,
 .landing_page, 
@@ -133,8 +137,9 @@ h6 {
         padding: 0;
     }
     .header_text {
-        top: 12rem;
+        top: 20%;
     }
+    
 }
 
 @media screen and (min-width: 1250px) {
