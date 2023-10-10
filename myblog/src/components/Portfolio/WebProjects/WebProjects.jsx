@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../../Navbar/Navbar_footer/Footer';
 import './webprojects.css';
 import { motion, AnimatePresence } from 'framer-motion';
-//import ideas_image from '../../../assets/blog_image.png';
+import Ecommerce_template_image from '../../../assets/e-commerce_template.png';
 import mendImage from '../../../assets/mendScreenshot.png'
 
 const webProjects = [
@@ -12,17 +12,17 @@ const webProjects = [
     img: mendImage,
     link: 'https://holeey.github.io/psychic-enigma/',
     linkText: 'Open an example website',
-    ideaDescription: "volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu"
+    ideaDescription: "A beautifully designed coporate website. Specifically crafted to meet SEO and industry standards"
   },
- /*{
+ {
     id: '02',
-    name: 'TitTok',
-    img: ideas_image,
-    link: 'https://github.com/Holeey/psychic-enigma/settings/pages',
+    name: 'Cara_clothings',
+    img: Ecommerce_template_image,
+    link: 'https://holeey.github.io/e-commerce_template/',
     linkText: 'Open an example website',
-    ideaDescription: "Very interesting technology of transition between pages. This effect will definitely imprint website of this financial agency in the visitors mind, which later will help convert them to the real clients!",
+    ideaDescription: "Very interesting ecommerce template which is both stunning and responsive on all mobile devices. Specifically crafted to meet SEO and industry standards",
   },
-  {
+  /*{
     id: '03',
     name: 'Instagram',
     img: ideas_image,
