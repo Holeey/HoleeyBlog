@@ -9,7 +9,7 @@ const skill_inventory = [
     { id: '02', skill: 'svg Animation', skillDescription: 'Stunning UI/UX'},
     { id: '03', skill: 'Java Script', skillDescription: 'The language of the web'},
     { id: '04', skill: 'Git & Github', skillDescription: 'A version control system that helps in the workflow of projects'},
-    { id: '05', skill: 'SCSS framerMotion', skillDescription: 'I can work with popular css libraries'},
+    { id: '05', skill: 'SASS framerMotion', skillDescription: 'I can work with popular css libraries'},
     { id: '06', skill: 'React jQuery', skillDescription: 'I can work with popular js libraries and framework'},
 ]
 

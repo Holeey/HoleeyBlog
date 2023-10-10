@@ -22,7 +22,7 @@ const Portfolio = () => {
       
           <div className='portfolio'>
           <h1>Portfolio </h1>
-          <h3>Ideas for your website </h3>        
+          <h3>Web Apps </h3>        
           <section className='section_col_grid'>
            
             <div className='ideas_example right_angle'>  
@@ -48,7 +48,7 @@ const Portfolio = () => {
               </div>
             </div>
             <div className='ideas_example_description  reverse-right_angle' >
-             Here you can choose an idea which will fit well to your project </div>
+             Here you can take a look at web applications </div>
           </section>       
          <WebProjects />
         
