@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/holeeyblog/static/css/main.89ffba78.css",
-    "main.js": "/holeeyblog/static/js/main.5eafc1d5.js",
+    "main.js": "/holeeyblog/static/js/main.c16f3149.js",
+    "static/media/e-commerce_template.png": "/holeeyblog/static/media/e-commerce_template.305e47b75467f8a5e214.png",
     "static/media/mendScreenshot.png": "/holeeyblog/static/media/mendScreenshot.d9c441c351aac9a13efc.png",
     "static/media/blog_image.png": "/holeeyblog/static/media/blog_image.f1f338442cfd2ebf36c6.png",
     "index.html": "/holeeyblog/index.html",
     "main.89ffba78.css.map": "/holeeyblog/static/css/main.89ffba78.css.map",
-    "main.5eafc1d5.js.map": "/holeeyblog/static/js/main.5eafc1d5.js.map"
+    "main.c16f3149.js.map": "/holeeyblog/static/js/main.c16f3149.js.map"
   },
   "entrypoints": [
     "static/css/main.89ffba78.css",
-    "static/js/main.5eafc1d5.js"
+    "static/js/main.c16f3149.js"
   ]
 }
